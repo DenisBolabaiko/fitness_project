@@ -1,0 +1,135 @@
+body {
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background-color: #907fe6;
+}
+footer {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+.navbar-brand img { 
+    height: 30px;
+    width 30px;
+}
+.content-block {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.9s ease;
+}
+    .content-block:hover {
+        box-shadow: rgba(0.0.0.0) 10px 10px;
+    }
+
+.img-content {
+    width: 200px;
+    height: 150px;
+}
+.feedback-form {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.9s ease;
+}
+    .feedback-form label {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: block;
+    }
+
+    .feedback-form input,
+    .feedback-form select,
+    .feedback-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .feedback-form textarea {
+        resize: vertical;
+        min-height: 100px;
+    }
+    .feedback-form button {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+        .feedback-form button:hover {
+            background-color: #0056b3;
+        }
+.form-title {
+    font-size: 28px;
+    font-weight: bold;
+    background-color:aliceblue;
+    color: #333;
+    border-bottom: 2px solid black;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 0px;
+}
+
+.comment-block {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

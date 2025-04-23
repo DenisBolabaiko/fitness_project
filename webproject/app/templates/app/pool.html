@@ -1,0 +1,58 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2 class="form-title">{{ title }}</h2>
+{% if form %}
+<div class="feedback-form">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button type="submit" id="submit-button">Отправить отзыв</button>
+
+    </form>
+{% endif %}
+</div>
+
+{% if feedback %}
+<div class="feedback-form">
+    <h2>Спасибо за ваш отзыв!</h2>
+    <h3>Вы ввели следующие данные:</h3>
+    <ul>
+        <li><strong>Оценка:</strong> {{ feedback.rating }}</li>
+        <li><strong>Комментарий:</strong> {{ feedback.comments }}</li>
+        <li><strong>Имя:</strong> {{ feedback.name }}</li>
+        <li><strong>Город:</strong> {{ feedback.city }}</li>
+        <li><strong>Email:</strong> {{ feedback.email }}</li>
+    </ul>
+</div>
+
+{% endif %}
+
+<script>
+    const submitButton = document.getElementById('submit-button');
+    const inputFields = document.querySelectorAll('input, textarea');
+
+    submitButton.addEventListener('mouseover', function () {
+        this.style.color = 'red';
+        this.style.backgroundColor = 'green';
+    });
+
+    submitButton.addEventListener('mouseout', function () {
+        this.style.color = '';
+        this.style.backgroundColor = '';
+    });
+
+    inputFields.forEach(function (field) {
+        field.addEventListener('focus', function () {
+            this.style.backgroundColor = 'lightyellow';
+        });
+
+        field.addEventListener('blur', function () {
+            this.style.backgroundColor = '';
+        });
+    });
+</script>
+
+{% endblock %}

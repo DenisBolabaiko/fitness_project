@@ -1,0 +1,121 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+{% block content %}
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+    <ol class="carousel-indicators" >
+
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+
+        <div class="item active">
+
+            <img src="{% static 'app/content/blog1.jfif'%} " alt="Первый слайд" class="img-responsive" />
+
+            <div class="carousel-caption" role="option">
+
+                <p style="color: azure">
+
+                    Кроссовки для фитнеса: как выбрать идеальную пару для тренировок
+                </p>
+                <a class="btn btn-default" href="{% url 'blogpost' parametr=4 %}" style="margin-bottom: 40px;">
+
+                    Читать далее
+
+                </a>
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <img src="{% static 'app/content/blog2.jfif'%}" alt="Второй слайд" class="img-responsive" />
+
+            <div class="carousel-caption" role="option">
+
+                <p style="color: azure">
+                    Как мотивировать себя на регулярные тренировки
+                </p>
+                <a class="btn btn-default" href="{% url 'blogpost' parametr=3 %}" style="margin-bottom: 40px;">
+                    Читать далее
+                </a>
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <img src=" {% static 'app/content/blog3.jfif'%} " alt="Третий слайд" class="img-responsive" />
+
+            <div class="carousel-caption" role="option">
+
+                <p style="color: azure">
+
+                    Питание до и после тренировки: что есть, чтобы получить максимум пользы
+                </p>
+                <a class="btn btn-default" href="{% url 'blogpost' parametr=2 %}" style="margin-bottom: 40px;">
+                    Читать далее
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+
+        <span class="sr-only">Previous</span>
+
+    </a>
+
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+
+        <span class="sr-only">Next</span>
+
+    </a>
+
+</div>
+<div id="workouts" class="content-block">
+    <h2>Тренировки</h2>
+    <hr>
+    <article>
+        <h3>Кардио-тренировка</h3>
+        <p>Кардио-тренировки помогают сжигать калории и улучшают сердечно-сосудистую систему.</p>
+        <img src="{% static 'app/content/kardio.jpg' %}" alt="кардио" class="img-content"/>
+    </article>
+    <article>
+        <h3>Силовая тренировка</h3>
+        <p>Силовые тренировки помогают нарастить мышечную массу и укрепить тело.</p>
+        <img src="{% static 'app/content/power.gif' %}" alt="Силовая тренировка" class="img-content"/>
+    </article>
+    <article>
+        <h3>Кросс-фит</h3>
+        <p>Высокоинтенсивные тренировки улучшают выносливость организма и дышательную систему<p>
+            <img src="{% static 'app/content/crossfit.gif' %}" alt="Силовая тренировка" class="img-content">
+    </article>
+</div>
+
+<div id="nutrition" class="content-block">
+    <h2>Питание</h2>
+    <hr>
+    <p><b>Правильное питание</b> — ключ к успеху в фитнесе.</p>
+    <ul>
+        <li>Фрукты и овощи</li>
+        <li>Белки</li>
+        <li>Здоровые жиры</li>
+    </ul>
+    <img src="{% static 'app/content/food.jpg' %}" alt="Здоровая еда" class="img-content">
+</div>
+
+
+{% endblock %}

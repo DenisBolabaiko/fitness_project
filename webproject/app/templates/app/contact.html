@@ -1,0 +1,22 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2 class="form-title">{{ title }}</h2>
+
+<div class="content-block">
+    <h3>{{ message }}</h3>
+    <address>
+        Фирма<br />
+        Улица, д.3<br />
+        <abbr title="телефон">Телефон</abbr>
+        425.555.0100
+    </address>
+
+    <address>
+        <strong>Поддержка:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
+        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+    </address>
+</div>
+
+{% endblock %}

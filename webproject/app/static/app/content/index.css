@@ -1,0 +1,76 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #907fe6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+    header h1 {
+        color: aliceblue;
+    }
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+            nav ul li a:hover {
+                color: #ffcc00;
+            }
+
+h2, h3 {
+    color: #333;
+}
+
+div {
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.9s ease;
+}
+
+    div:hover {
+        box-shadow: rgba(0.0.0.0) 10px 10px;
+    }
+
+.team-image, .workout-image, .nutrition-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+}

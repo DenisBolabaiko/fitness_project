@@ -1,0 +1,10 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+
+{% block content %}
+<h3 class="form-title">{{ title }}</h3>
+<div>
+    <video src="{% static 'app/content/vid1.mp4' %}" controls="controls" width="400" height="300" poster="{% static 'app/content/jim.jpg '%}"></video>
+    <video src="{% static 'app/content/vid2.mp4' %}" controls="controls" width="400" height="300" poster="{% static 'app/content/jirya.png' %}"></video>
+</div>
+{% endblock %}

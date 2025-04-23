@@ -1,0 +1,17 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+{% block content %}
+
+<h2 class="form-title">{{ title }}</h2>
+
+<div class="content-block">
+    <h3>{{ message }}</h3>
+    <p>О нас</p>
+
+    <img src="{% static 'app/content/runningman.jpg' %}" alt="Наша команда" class="img-content">
+    <p>Наш сайт посвящен фитнесу и здоровому образу жизни. Мы предлагаем разнообразные тренировки, советы по питанию и мотивацию для всех, кто хочет улучшить свое здоровье.</p>
+
+</div>
+
+
+{% endblock %}
